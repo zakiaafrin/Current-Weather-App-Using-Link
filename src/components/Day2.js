@@ -70,9 +70,7 @@ class Day2 extends Component {
   render() {
     return (
       <div className="weather-container">
-        <h3 className="weather-title">
-          <Titles />
-        </h3>
+        <Titles />
         <img
           src="https://www.freeiconspng.com/uploads/location-icon-png-21.png"
           aria-hidden

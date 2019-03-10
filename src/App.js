@@ -13,7 +13,7 @@ function Index() {
 }
 
 function Hourly() {
-  return <h2>{<Day2 />}</h2>;
+  return <div className="w3-display-container w3-text-black">{<Day2 />}</div>;
 }
 
 function AppRouter() {
@@ -26,13 +26,13 @@ function AppRouter() {
               <Link to="/">Current Weather</Link>
             </li>
             <li>
-              <Link to="/Hourly/">Day2</Link>
+              <Link to="/Tab/">TAB</Link>
             </li>
           </ul>
         </nav>
 
         <Route path="/" exact component={Index} />
-        <Route path="/Hourly/" component={Hourly} />
+        <Route path="/Tab/" component={Hourly} />
       </div>
     </Router>
   );
